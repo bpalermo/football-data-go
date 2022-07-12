@@ -1,0 +1,26 @@
+{
+    "id": 2267,
+    "name": "World",
+    "code": "INT",
+    "flag": null,
+    "parentAreaId": null,
+    "parentArea": null,
+    "childAreas": [
+        {
+            "id": 2001,
+            "name": "Africa",
+            "countryCode": "AFR",
+            "flag": null,
+            "parentAreaId": 2267,
+            "parentArea": "World"
+        },
+        {
+            "id": 2010,
+            "name": "Arameans Suryoye",
+            "countryCode": "ARS",
+            "flag": null,
+            "parentAreaId": 2267,
+            "parentArea": "World"
+        }
+    ]
+}
