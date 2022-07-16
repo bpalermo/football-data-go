@@ -3,7 +3,7 @@ package client
 import (
 	"encoding/json"
 	"fmt"
-	api2 "github.com/bpalermo/football-data-go/v4/api"
+	"github.com/bpalermo/football-data-go/v4/api"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -18,10 +18,10 @@ const (
 
 type ApiClient interface {
 	do(method, endpoint string, params map[string]string, ret interface{}) (err error)
-	GetAreas() (a *api2.Areas, err error)
-	GetArea(id string) (a []*api2.Area, err error)
-	GetCompetitions() (a *api2.Competitions, err error)
-	GetCompetition() (a *api2.Competition, err error)
+	GetAreas() (a *api.Areas, err error)
+	GetArea(id string) (a []*api.Area, err error)
+	GetCompetitions() (a *api.Competitions, err error)
+	GetCompetition(code string) (competition *api.Competition, err error)
 }
 
 // Option is a functional option for configuring the API client
